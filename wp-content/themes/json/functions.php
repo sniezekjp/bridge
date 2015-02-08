@@ -49,7 +49,7 @@ function themes_dir_add_rewrites() {
   global $wp_rewrite;
   $theme_name = next(explode('/themes/', get_stylesheet_directory())); 
   $new_non_wp_rules = array( 
-    'api/(.*)'       => 'wp-content/themes/'. $theme_name . '/dashboard.php?command=$1'
+    'api/(.*)' => JSON_API_FILE
   );  
   $wp_rewrite->non_wp_rules += $new_non_wp_rules;  
 }  
