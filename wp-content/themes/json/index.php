@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+<h1>Hello update</h1>
   <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_cart">
     <input type="hidden" name="upload" value="1">
